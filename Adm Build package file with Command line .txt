@@ -1,0 +1,11 @@
+
+cd /d C:\CICD\appian-adm-versioning-client-2.5.8
+version-application.bat -action buildAllApps -application_path %application_path% -uuid %parent_application_uuid% -start_hash %start_hash% -end_hash %end_hash% -package_path %package_path%
+
+
+version-application.bat -action buildSingleApp -start_hash 698dfcf32a45593b7f38c9330264b2b7b09f491c
+ -end_hash ae3f68e2e9e96933ff272f131026708dcae49805
+ 
+ 
+cd /d C:\CICD\appian-adm-versioning-client-2.5.4
+version-application.bat -action buildSingleApp -application_path C:\CICD\Devops\appian\applications\application_files\application\Digits Operations App (2).zip -uuid _a-0000e320-a371-8000-ffe9-01ef9001ef90_86174 -start_hash 698dfcf32a45593b7f38c9330264b2b7b09f491c -end_hash ae3f68e2e9e96933ff272f131026708dcae49805 -package_path C:\CICD\Git_Packages\test1.zip
